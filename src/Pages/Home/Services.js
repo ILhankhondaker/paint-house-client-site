@@ -8,20 +8,23 @@ const Services = () => {
     const services = [
         {
             _id: 1,
-            name: 'Fluoride Treatment',
-            description: '',
+            name: 'Paint Roller Covers',
+            price: 69,
+            description: 'Paint Roller 4 Paint Roller 10 Cm Mini 4 "tiger Tattoo Acrylic Paint',
             img: fluoride
         },
         {
             _id: 2,
-            name: 'Cavity Filling',
-            description: '',
+            name: 'Paint Roller Set',
+            description: 'Polyester + Heavy Duty Handle, - For rough & smooth surfaces, 适用于粗糙光滑表面, - High density, 密度高, - Suitable for latex emulsion & Oil paint',
+            price: 167,
             img: cavity
         },
         {
             _id: 3,
-            name: 'Teeth Whitening',
-            description: '',
+            name: 'Paint Roller Brush',
+            price: 79,
+            description: 'Polyester + Heavy Duty Handle, - For rough & smooth surfaces, 适用于粗糙光滑表面, - High density, 密度高, - Suitable for latex emulsion & Oil paint',
             img: whitening
         },
     ];
