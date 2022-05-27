@@ -7,21 +7,14 @@ import Loading from '../Shared/Loading';
 const AddDoctor = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('https://shielded-mountain-79864.herokuapp.com/service').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/service').then(res => res.json()))
 
     // const imageStorageKey = '4295ac4d47b569312bea67b440cdbdbb';
 
     //   ============ my api =========
     const imageStorageKey = '14d71a56778635f2eec1183e4390a698';
 
-    /**
-     * 3 ways to store images
-     * 1. Third party storage //Free open public storage is ok for Practice project 
-     * 2. Your own storage in your own server (file system)
-     * 3. Database: Mongodb 
-     * 
-     * YUP: to validate file: Search: Yup file validation for react hook form
-    */
+
     const onSubmit = async data => {
         const image = data.image[0];
         const formData = new FormData();
@@ -43,7 +36,7 @@ const AddDoctor = () => {
                     }
                     console.log(result)
                     // send to your database==== 
-                    fetch('https://shielded-mountain-79864.herokuapp.com/doctor', {
+                    fetch('http://localhost:5000/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -54,11 +47,11 @@ const AddDoctor = () => {
                         .then(res => res.json())
                         .then(inserted => {
                             if (inserted.insertedId) {
-                                toast.success('Doctor added successfully')
+                                toast.success('Product added successfully')
                                 reset();
                             }
                             else {
-                                toast.error('Failed to add the doctor');
+                                toast.error('Failed to add the Product');
                             }
                         })
 
@@ -72,17 +65,17 @@ const AddDoctor = () => {
     }
 
     return (
-        <div>
-            <h2 className="text-2xl">Add a New Doctor</h2>
+        <div >
+            <h2 className="text-2xl font-bold">Add a New Product</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
 
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
-                        <span className="label-text">Name</span>
+                        <span className="label-text font-bold">Product Name</span>
                     </label>
                     <input
                         type="text"
-                        placeholder="Your Name"
+                        placeholder="Product Name"
                         className="input input-bordered w-full max-w-xs"
                         {...register("name", {
                             required: {
@@ -98,7 +91,7 @@ const AddDoctor = () => {
 
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
-                        <span className="label-text">Email</span>
+                        <span className="label-text font-bold">Email</span>
                     </label>
                     <input
                         type="email"
@@ -123,7 +116,7 @@ const AddDoctor = () => {
 
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
-                        <span className="label-text">Specialty</span>
+                        <span className="label-text font-bold">Select Category</span>
                     </label>
                     <select {...register('specialty')} class="select input-bordered w-full max-w-xs">
                         {
@@ -139,7 +132,7 @@ const AddDoctor = () => {
                 {/*==== Image input ==== */}
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
-                        <span className="label-text">Photo</span>
+                        <span className="label-text font-bold">Photo</span>
                     </label>
                     <input
                         type="file"
@@ -156,7 +149,7 @@ const AddDoctor = () => {
                     </label>
                 </div>
 
-                <input className='btn w-full max-w-xs text-white' type="submit" value="Add" />
+                <input className='btn btn-warning w-full max-w-xs text-white  bg-orange-600' type="submit" value="Add" />
             </form>
         </div>
     );

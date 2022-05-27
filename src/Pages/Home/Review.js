@@ -1,6 +1,6 @@
 import React from 'react';
 import Service from './Service';
-
+import { BsFillStarFill } from 'react-icons/bs';
 const Review = ({ review }) => {
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
@@ -12,10 +12,12 @@ const Review = ({ review }) => {
                 </div>
                 <div>
                     <h4 className='text-xl font-bold'>Name: {review.name}</h4>
+
                     <p>Area: {review.location}</p>
                 </div>
-                <h1 className='font-bold'>Rating: {review.review}</h1>
+                <h1 className='font-bold flex'>Rating: {review.review}<BsFillStarFill /> </h1>
                 <p> {review.comment}</p>
+
                 <div className="flex items-center">
 
 

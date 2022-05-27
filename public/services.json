@@ -1,57 +1,86 @@
 [
-    {
-      "_id": 1,
-      "name": "Teeth Orthodontics",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    },
-    {
-      "_id": 2,
-      "name": "Cosmetic Dentistry",
-      "slots": [
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    },
-    {
-      "_id": 3,
-      "name": "Teeth Cleaning",
-      "slots": []
-    },
-    {
-      "_id": 4,
-      "name": "Cavity Protection",
-      "slots": [
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    },
-    {
-      "_id": 5,
-      "name": "Pediatric Dental",
-      "slots": [
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    },
-    {
-      "_id": 6,
-      "name": "Oral Surgery",
-      "slots": [
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    }
-  ]
+  {
+    "name": "paint Roller Cover",
+    "price": "3",
+    "discription": "Paint Roller 4 Paint Roller 10 Cm Mini 4 tiger Tattoo Acrylic Paint",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBqzwfLvwY_FuUxvQjYU06Dugzbr8_TqChA&usqp=CAU",
+    "slots": [
+      "100",
+      "200",
+      "250",
+      "400",
+      "500",
+      "1500"
+    ]
+  },
+  {
+    "name": "Paint Roller Set",
+    "price": "6",
+    "discription": "Polyester + Heavy Duty Handle, - For rough & smooth surfaces, 适用于粗糙光滑表面, - High density, 密度高, - Suitable for latex emulsion & Oil paint",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKAQut9W9T0KnvUiOw2q_QEVSEgdU35llomw&usqp=CAU",
+    "slots": [
+      "70",
+      "200",
+      "300",
+      "400",
+      "500",
+      "1200"
+    ]
+  },
+  {
+    "name": "Paint Roller Brush",
+    "price": "4",
+    "discription": "Polyester + Heavy Duty Handle, - For rough & smooth surfaces, 适用于粗糙光滑表面, - High density, 密度高, - Suitable for latex emulsion & Oil paint",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyL1OdJtMimM_rRcZIu3bLZUD7lE5bY03T1Q&usqp=CAU",
+    "slots": [
+      "120",
+      "250",
+      "300",
+      "450",
+      "550",
+      "1200"
+    ]
+  },
+  {
+    "name": "All in one Paint Roller set",
+    "price": "8",
+    "discription": "[High Quality Material]:100 % Polyester,premium quality.  Package includes 10 pieces: 1 Roller Frame,Size of the roller is 4 inches,",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9pVcYWUrnt-58D6h4w5_xhMeDzSyDJrZeTA&usqp=CAU",
+    "slots": [
+      "80",
+      "200",
+      "300",
+      "400",
+      "500",
+      "1500"
+    ]
+  },
+  {
+    "name": "Paint Roller Tray",
+    "price": "4",
+    "discription": "Professional Wall Paint Roller Brush Set Replaceable Rollers Total 5 Pieces Mini 4inch Tray Tools Kit",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPCcv_10ar4bvD6rz0f3Ul9T-9pN5lKRiftA&usqp=CAU",
+    "slots": [
+      "50",
+      "200",
+      "300",
+      "400",
+      "500",
+      "1400"
+    ]
+  },
+  {
+    "name": "Non Drop paint Roller",
+    "price": "5",
+    "discription": "Pintar Facil Smart Design Paint Roller Runner durable",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ8iV97nhpbQIGqDa44wkuRKOAmzVr-q6tqg&usqp=CAU",
+    "slots": [
+      "100",
+      "200",
+      "350",
+      "500",
+      "700",
+      "2000"
+    ]
+  }
+]

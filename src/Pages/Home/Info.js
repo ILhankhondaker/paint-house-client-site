@@ -9,11 +9,11 @@ const Info = () => {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 my-20'>
 
-            <InfoCard cardTitle="Opening Hours" bgClass="bg-gradient-to-r from-secondary to-primary" img={clock}></InfoCard>
+            <InfoCard cardTitle="Opening Hours" info="24h/7day we provide our service" img={clock}></InfoCard>
 
-            <InfoCard cardTitle="Our Locations" bgClass="bg-accent" img={marker}></InfoCard>
+            <InfoCard cardTitle="Our Locations" info="Our Permanent Office is in China" img={marker}></InfoCard>
 
-            <InfoCard cardTitle="Contact Us" bgClass="bg-gradient-to-r from-secondary to-primary" img={phone}></InfoCard>
+            <InfoCard cardTitle="Contact Us" info="Phone +880168   emai:painthoust@gamil.com" img={phone}></InfoCard>
         </div>
     );
 };

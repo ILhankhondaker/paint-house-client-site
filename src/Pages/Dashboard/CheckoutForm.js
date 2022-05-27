@@ -10,10 +10,11 @@ const CheckoutForm = ({ appointment }) => {
     const [transactionId, setTransactionId] = useState('');
     const [clientSecret, setClientSecret] = useState('');
 
-    const { _id, price, patient, patientName } = appointment;
-
+    const { _id, price, slot, patient, patientName } = appointment;
+    console.log(appointment)
+    console.log(slot)
     useEffect(() => {
-        fetch('https://shielded-mountain-79864.herokuapp.com/create-payment-intent', {
+        fetch('http://localhost:5000/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -72,7 +73,7 @@ const CheckoutForm = ({ appointment }) => {
         else {
             setCardError('');
             setTransactionId(paymentIntent.id);
-            console.log(paymentIntent);
+            // console.log(paymentIntent);
             setSuccess('Congrats! Your payment is completed.')
 
             //store payment on database
@@ -80,7 +81,7 @@ const CheckoutForm = ({ appointment }) => {
                 appointment: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://shielded-mountain-79864.herokuapp.com/booking/${_id}`, {
+            fetch(`http://localhost:5000/booking/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',
@@ -90,7 +91,7 @@ const CheckoutForm = ({ appointment }) => {
             }).then(res => res.json())
                 .then(data => {
                     setProcessing(false);
-                    console.log(data);
+                    // console.log(data);
                 })
 
         }
@@ -114,7 +115,7 @@ const CheckoutForm = ({ appointment }) => {
                         },
                     }}
                 />
-                <button className='btn btn-success btn-sm mt-4' type="submit" disabled={!stripe || !clientSecret || success}>
+                <button className='btn btn-warning bg-orange-600 text-white btn-sm mt-4' type="submit" disabled={!stripe || !clientSecret || success}>
                     Pay
                 </button>
             </form>

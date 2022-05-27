@@ -9,7 +9,7 @@ const Services = () => {
         {
             _id: 1,
             name: 'Paint Roller Covers',
-            price: 69,
+            price: 3,
             description: 'Paint Roller 4 Paint Roller 10 Cm Mini 4 "tiger Tattoo Acrylic Paint',
             img: fluoride
         },
@@ -17,13 +17,13 @@ const Services = () => {
             _id: 2,
             name: 'Paint Roller Set',
             description: 'Polyester + Heavy Duty Handle, - For rough & smooth surfaces, 适用于粗糙光滑表面, - High density, 密度高, - Suitable for latex emulsion & Oil paint',
-            price: 167,
+            price: 6,
             img: cavity
         },
         {
             _id: 3,
             name: 'Paint Roller Brush',
-            price: 79,
+            price: 4,
             description: 'Polyester + Heavy Duty Handle, - For rough & smooth surfaces, 适用于粗糙光滑表面, - High density, 密度高, - Suitable for latex emulsion & Oil paint',
             img: whitening
         },

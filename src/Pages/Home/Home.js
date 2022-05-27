@@ -6,6 +6,7 @@ import Info from './Info';
 import Services from './Services';
 import BusinesSumary from './BusinesSumary';
 import ClientRivew from './ClientRivew';
+import Faq from './Faq';
 
 
 
@@ -16,7 +17,8 @@ const Home = () => {
             <Services></Services>
             <BusinesSumary></BusinesSumary>
             <ClientRivew></ClientRivew>
-            <Contact></Contact>
+            {/* <Contact></Contact> */}
+            <Faq></Faq>
             <Info></Info>
             <Footer></Footer>
 
