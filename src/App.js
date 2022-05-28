@@ -19,6 +19,8 @@ import RequireAdmin from './Pages/Login/RequireAdmin';
 import ManageDoctors from './Pages/Dashboard/ManageDoctors';
 import Payment from './Pages/Dashboard/Payment';
 import Portfolio from './Pages/Dashboard/Portfolio';
+import Page from './Pages/Home/Page';
+
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Page></Page>} />
+
         <Route path="blog" element={<About />} />
         <Route path="myportfolio" element={<Portfolio></Portfolio>} />
 
